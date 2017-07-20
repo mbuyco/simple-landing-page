@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>StokTalk</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://bootswatch.com/lumen/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                background: #000 url(images/matt-lamers-261639.jpg) no-repeat fixed center;
+                background-size: cover;
+                height: 100%;
+            }
+
+            #main-nav {
+                margin-bottom: 0;
+                background: rgba(255,255,255,0.95);
+                border: 0;
+            }
+                #main-nav .navbar-brand {
+                    font-weight: bold;
+                    font-size: 24px;
+                }
+
+            #category-bar {
+                background: rgba(255,255,255,0.75);
+                padding: 0 15px;
+            }
+                    #category-bar ul > li {
+                        margin-right: 20px;
+                    }
+                        #category-bar ul > li > a {
+                            text-transform: uppercase;
+                            font-size: 11px;
+                        }
+
+            #featured-companies {
+                margin-top: 80px;
+            }
+                #featured-companies .stock {
+                    border: 0;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    border-radius: 0;
+                    background-color: rgba(0,0,0,0.7);
+                }
+                    #featured-companies .stock h4 {
+                        color: #fff;
+                        font-size: 24px;
+                    }
+                    #featured-companies .stock h5 {
+                        color: #fff;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+
+            #login-register-container {
+                margin-top: 40px;
+            }
+        </style>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">StokTalk</a>
+                </div>
+                <form action="" class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Ticker (AAPL) or Name">
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-default">Join</button>
+                        <button type="button" class="btn btn-success">Sign In</button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <div id="category-bar">
+            <ul class="list-unstyled list-inline">
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">AAPL</a></li>
+                <li><a href="#">NFLX</a></li>
+                <li><a href="#">FB</a></li>
+                <li><a href="#">PANW</a></li>
+                <li><a href="#">TSLA</a></li>
+                <li><a href="#">AMZN</a></li>
+                <li><a href="#">GOOGL</a></li>
+                <li><a href="#">TWTR</a></li>
+                <li><a href="#">BABA</a></li>
+            </ul>
+        </div>
+        <div id="main-container" class="container-fluid">
+            <div id="featured-companies" class="row">
+                <div class="col-md-3 col-md-offset-3">
+                    <div id="stock1" class="stock well">
+                        <h4><span class="glyphicon glyphicon-triangle-bottom text-danger"></span> SENSEX</h4>
+                        <h5>31,903.95</h5>
+                        <p class="text-danger"><strong>102.05 (-0.3%)</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="stock2" class="stock well">
+                        <h4><span class="glyphicon glyphicon-triangle-top text-success"></span> NIFTY</h4>
+                        <h5>9,878.55</h5>
+                        <p class="text-success"><strong>55.26 (0.3%)</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div id="login-register-container" class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <form action="">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <span class="glyphicon glyphicon-envelope"></span>
+                                </div>
+                                <input type="text" class="form-control" id="email" placeholder="Enter your email to get started">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span></button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-block btn-primary">
+                                <span class="fa fa-2x fa-facebook pull-left"></span>
+                                Login with Facebook
+                            </button>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-block btn-danger">
+                                <span class="fa fa-2x fa-google pull-left"></span>
+                                Login with Gmail
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
